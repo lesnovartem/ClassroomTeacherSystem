@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.ListStudent">
+    <RefreshView x:Name="MyRefresh" Refreshing="RefreshViews_Refreshing" IsRefreshing="{Binding IsRefreshing}" RefreshColor="Red" Command="{Binding RefreshViewCommand}">
+        <ScrollView>
+            <StackLayout>
+
+                <ListView x:Name="listStudent" HasUnevenRows="True">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>  
+                            <ViewCell>
+                                <StackLayout>
+
+                                    <Label Margin="5" FontSize="30" HorizontalOptions="Center" Text="{Binding Name}"/>
+
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ScrollView>
+    </RefreshView>
+</ContentPage>

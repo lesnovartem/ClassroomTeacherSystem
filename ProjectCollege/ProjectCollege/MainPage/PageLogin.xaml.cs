@@ -34,10 +34,10 @@ namespace ProjectCollege.MainPage
             {
                 odbConnectApp.dbObj.Student.ToList();
             });
-            test();
+            Autorization();
             ((MainWindow)System.Windows.Application.Current.MainWindow).CloseLoad();
         }
-        public void test()
+        public void Autorization()
         {
             var userObj = odbConnectApp.dbObj.User.FirstOrDefault(x => x.Password
             == txbPassword.Text && x.Login == txbLogin.Text);
@@ -59,23 +59,6 @@ namespace ProjectCollege.MainPage
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
             Login();
-            /*var userObj = odbConnectApp.dbObj.User.FirstOrDefault(x => x.Password 
-            == txbPassword.Text && x.Login == txbLogin.Text);
-            if (userObj != null)
-            {
-                switch (userObj.IdRole)
-                {
-                    case 1:
-                        FrameApp.frmObj.Navigate(new PageMenuTeather());
-                        break;
-                    case 2:
-                        FrameApp.frmObj.Navigate(new PageMenuStudent());
-                        break;
-                }
-            }
-            else
-                MessageBox.Show("Пользоватеь не найден");
-        }*/
         }
 
         private void Grid_KeyUp(object sender, KeyEventArgs e)

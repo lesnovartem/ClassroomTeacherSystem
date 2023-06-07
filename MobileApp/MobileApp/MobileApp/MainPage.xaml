@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.MainPage">
+
+    <!--<StackLayout Padding="30"
+             VerticalOptions="Start">
+        <Entry Text="{Binding Username}"
+                       Placeholder="Логин" />
+        <Entry Text="{Binding Password}"
+                       Placeholder="Пароль"
+                       IsPassword="True" />
+        <Button Text="Войти"
+           TextColor="White"
+           BackgroundColor="#22A7F0"
+           x:Name="ButtonLogin"/>
+    </StackLayout>-->
+
+    <StackLayout VerticalOptions="Start" Padding="30">
+        
+        <Button Text="Список студентов"
+                TextColor="White"
+                BackgroundColor="#22A7F0"
+                x:Name="btnStudentList"
+                Clicked="btnStudentList_Clicked"/>
+        <Button Text="Пропуски"
+                Margin="0, 30, 0, 0"
+                TextColor="White"
+                BackgroundColor="#22A7F0"
+                x:Name="ButtonOmissions"
+                Clicked="ButtonOmissions_Clicked"/>
+    </StackLayout>
+    
+</ContentPage>

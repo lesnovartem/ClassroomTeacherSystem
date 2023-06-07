@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.OmissionsAdd">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="test" HorizontalOptions="Center" FontSize="30"/>
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                <Label Text="Дата: " VerticalTextAlignment="Center" FontSize="20"/>
+                <DatePicker Date="{Binding StudentOmissions.Date}"/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                <Label Text="Количество пропусков: " VerticalTextAlignment="Center" FontSize="20"/>
+                <Entry Text="{Binding StudentOmissions.Num}" WidthRequest="50"/>
+            </StackLayout>
+            <StackLayout>
+                <Button x:Name="Save" Clicked="Save_Clicked" Text="Сохранить"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
