@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cfed8ff29ca2486eb37549beda2d56c7" Name="Diagram1">
+        <EntityTypeShape EntityType="DBCollegeModel.Journal" Width="1.5" PointX="3" PointY="3.5" />
+        <EntityTypeShape EntityType="DBCollegeModel.Lesson" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DBCollegeModel.Role" Width="1.5" PointX="5.75" PointY="2.375" />
+        <EntityTypeShape EntityType="DBCollegeModel.Student" Width="1.5" PointX="0.75" PointY="3.5" />
+        <EntityTypeShape EntityType="DBCollegeModel.Test" Width="1.5" PointX="3" PointY="6.5" />
+        <EntityTypeShape EntityType="DBCollegeModel.User" Width="1.5" PointX="8" PointY="2" />
+        <AssociationConnector Association="DBCollegeModel.FK_Journal_Lesson" />
+        <AssociationConnector Association="DBCollegeModel.FK_Journal_Student" />
+        <AssociationConnector Association="DBCollegeModel.FK_User_Role" />
+        <AssociationConnector Association="DBCollegeModel.FK_Test_Student" />
+        <EntityTypeShape EntityType="DBCollegeModel.Image" Width="1.5" PointX="5.375" PointY="5.75" />
+        <EntityTypeShape EntityType="DBCollegeModel.Student_Lesson" Width="1.5" PointX="3" PointY="0.75" />
+        <AssociationConnector Association="DBCollegeModel.FK_Student_Lesson_Lesson" />
+        <AssociationConnector Association="DBCollegeModel.FK_Student_Lesson_Student" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,91 @@
+﻿<Page x:Class="ProjectCollege.MainPage.PageTeacher.PageMenuTeather"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProjectCollege.MainPage.PageTeacher"
+
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageMenuTeather">
+
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Name="test" Width="0.19*" MaxWidth="130"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Background="#116f9a" x:Name="sidePanel" Width="125" HorizontalAlignment="Left">
+            <StackPanel>
+                <StackPanel HorizontalAlignment="Right">
+                    <Button Name="Menu" Margin="5" Background="Transparent" Width="30" BorderBrush="Transparent" Click="Menu_Click">
+                        <Image Source="/Image/Menu/Menu.png"  Height="25"/>
+                    </Button>
+                </StackPanel>
+                <StackPanel>
+                    <ListView BorderBrush="Transparent" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="Transparent">
+                        <ListViewItem Selected="ListViewItem_Selected" >
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/Image/Menu/Home.png" Height="25"/>
+                                    <TextBlock Name="aa" Margin="15 0 0 0" VerticalAlignment="Center" Text="Студенты" TextAlignment="Center" Foreground="#FFFFFDFD" FontWeight="Bold"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Name="AddUser" Selected="AddUser_Selected">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/Image/Menu/AddUser.png" Height="25"/>
+                                    <TextBlock Margin="15 0 0 0" VerticalAlignment="Center" Text="Добавить" TextAlignment="Center" Foreground="#FFFFFDFD" FontWeight="Bold"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Name="Schedule" Selected="Schedule_Selected">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/Image/Menu/Cal.png" Height="25"/>
+                                    <TextBlock Margin="15 0 0 0" VerticalAlignment="Center" Text="Расписание" TextAlignment="Center" Foreground="#FFFFFDFD" FontWeight="Bold"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </ListViewItem>
+                        <!--<ListViewItem Name="Omissions" Selected="Omissions_Selected">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/Image/Menu/tickets.png" Height="25"/>
+                                    <TextBlock Margin="15 0 0 0" VerticalAlignment="Center" Text="Пропуски" TextAlignment="Center" Foreground="#FFFFFDFD" FontWeight="Bold"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </ListViewItem>-->
+                        <ListViewItem Name="Omissions" Selected="Omissions_Selected">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/Image/Menu/tickets.png" Height="25"/>
+                                    <TextBlock Margin="15 0 0 0" VerticalAlignment="Center" Text="Пропуски" TextAlignment="Center" Foreground="#FFFFFDFD" FontWeight="Bold"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Name="AddLesson" Selected="AddLesson_Selected">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/Image/Menu/lesson.png" Height="25"/>
+                                    <TextBlock Margin="15 0 0 0" VerticalAlignment="Center" Text="Урок" TextAlignment="Center" Foreground="#FFFFFDFD" FontWeight="Bold"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Name="Exit" Selected="Exit_Selected">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/Image/Menu/Exit.png" Height="25"/>
+                                    <TextBlock Margin="15 0 0 0" VerticalAlignment="Center" Text="Выход" TextAlignment="Center" Foreground="#FFFFFDFD" FontWeight="Bold"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </ListViewItem>
+                    </ListView>
+                </StackPanel>
+            </StackPanel>
+
+        </StackPanel>
+
+            <Frame Grid.Column="1" Name="FrameSecond"/>
+
+    </Grid>
+</Page>

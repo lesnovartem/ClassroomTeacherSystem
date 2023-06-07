@@ -1,0 +1,38 @@
+﻿<Page x:Class="ProjectCollege.MainPage.PageTeacher.ListStudent"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProjectCollege.MainPage.PageTeacher"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ListStudent">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock MouseDown="TextBlock_MouseDown" Text="Список студентов:" FontWeight="Bold" FontSize="22" TextAlignment="Center"/>
+        <Border CornerRadius="15" Width="500" Background="#116f9a" Grid.Row="1" Margin="20 10">
+            <ListView Margin="20" Name="List" d:ItemsSource="{d:SampleData ItemCount=5}" MouseDoubleClick="List_MouseDoubleClick">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel VerticalAlignment="Center" Margin="10">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="ФИО: " FontSize="20"/>
+                                <TextBlock Text="{Binding Name}" Width="300" FontSize="20"/>
+                                <Button Name="btnEdit" Click="btnEdit_Click" Background="Transparent" BorderBrush="Transparent">
+                                    <Image Source="/Image/Menu/edit.png" Height="20"/>
+                                </Button>
+                                <Button Name="btnDelete" Click="btnDelete_Click" Background="Transparent" BorderBrush="Transparent">
+                                    <Image Source="/Image/Menu/trash-can_115312.png" Height="20"/>
+                                </Button>
+                            </StackPanel>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Border>
+    </Grid>
+</Page>
