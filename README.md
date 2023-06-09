@@ -1,6 +1,6 @@
 # ClassroomTeacherSystem
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Пример)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Classroom+Teacher+System)](https://git.io/typing-svg)
 
 BD - Скрипт для импорта базы данных в SQL Server.
 MobileApp - Мобильное приложение.
