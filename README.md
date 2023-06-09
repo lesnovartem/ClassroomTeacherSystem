@@ -5,7 +5,8 @@ MobileApp - Мобильное приложение.
 ProjectCollege - Desktop программа.
 WebCollege - Api.
 
-Нужно в WebCollege обновить модель ADO.NET EDM. Модель находится в папке "Entities"/
+Нужно в WebCollege обновить модель ADO.NET EDM. Модель находится в папке "Entities".
+
 Для публикации API нужно открыть "Диспетчер служб IIS".
 Нажать на "Сайты", "Добавить веб-сайт". 
 ![alt tag](https://github.com/lesnovartem/Image/blob/main/Image_1.jpg?raw=true)
