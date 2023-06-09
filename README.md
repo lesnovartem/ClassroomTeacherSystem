@@ -61,3 +61,5 @@ var response = client.DownloadString("http://СвойIP/WebCollege/api/Students"
 ```
 var response = client.DownloadString("http://127.0.0.1/WebCollege/api/Students");
 ```
+
+![alt tag](https://github.com/lesnovartem/Image/blob/main/Image_5.jpg?raw=true)
