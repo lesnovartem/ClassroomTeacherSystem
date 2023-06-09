@@ -27,9 +27,11 @@ WebCollege - Api.
 <h2>MobileApp</h2>
 
 Для мобильного приложения нужно изменить в "Omissions.xaml.cs" на строчке 23 
+
 window.onload = function() {
 var response = client.DownloadString("http://СвойIP/WebCollege/api/Students");
 }
+
 или
 
 var response = client.DownloadString("http://127.0.0.1/WebCollege/api/Students");
