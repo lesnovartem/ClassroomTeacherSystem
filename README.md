@@ -32,7 +32,7 @@ WebCollege - Api.
 var response = client.DownloadString("http://СвойIP/WebCollege/api/Students");
 ```
 
-или
+или на
 
 ```
 var response = client.DownloadString("http://127.0.0.1/WebCollege/api/Students");
@@ -47,7 +47,7 @@ var result = client.UploadString("http://СвойIP/WebCollege/api/Tests", JsonC
 или на 
 
 ```
-var result = client.UploadString("http://127:0.0.1/WebCollege/api/Tests", JsonConvert.SerializeObject(_studentOmissions));
+var result = client.UploadString("http://127.0.0.1/WebCollege/api/Tests", JsonConvert.SerializeObject(_studentOmissions));
 ```
 
 И в "ListStudent.xaml.cs" на 23 и 39 строчках изменить на 
@@ -56,7 +56,7 @@ var result = client.UploadString("http://127:0.0.1/WebCollege/api/Tests", JsonCo
 var response = client.DownloadString("http://СвойIP/WebCollege/api/Students");
 ```
 
-или 
+или на
 
 ```
 var response = client.DownloadString("http://127.0.0.1/WebCollege/api/Students");
