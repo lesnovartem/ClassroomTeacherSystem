@@ -1,9 +1,13 @@
 # ClassroomTeacherSystem
 
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Пример)](https://git.io/typing-svg)
+
 BD - Скрипт для импорта базы данных в SQL Server.
 MobileApp - Мобильное приложение.
 ProjectCollege - Desktop программа.
 WebCollege - Api.
+***
+API
 
 Нужно в WebCollege обновить модель ADO.NET EDM. Модель находится в папке "Entities".
 
@@ -20,3 +24,4 @@ WebCollege - Api.
 Чтобы проверить вывод из базы данных можно в браузере написать http://СвойIP/WebCollege/api/Students или http://127.0.0.1/WebCollege/api/Students.
 ![alt tag](https://github.com/lesnovartem/Image/blob/main/Image_4.jpg?raw=true)
 ***
+MobileApp
