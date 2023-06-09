@@ -6,4 +6,4 @@ ProjectCollege - Desktop программа.
 WebCollege - Api.
 
 Для публикации API нужно открыть "Диспетчер служб IIS".
-
+![alt tag](http://url/to/img.png)
