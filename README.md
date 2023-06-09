@@ -26,7 +26,13 @@ WebCollege - Api.
 ***
 <h2>MobileApp</h2>
 
-Для мобильного приложения нужно изменить в "Omissions.xaml.cs" строчку "var response = client.DownloadString("http://СвойIP/WebCollege/api/Students");" или "var response = client.DownloadString("http://127.0.0.1/WebCollege/api/Students");"
+Для мобильного приложения нужно изменить в "Omissions.xaml.cs" на строчке 23 
+
+var response = client.DownloadString("http://СвойIP/WebCollege/api/Students");
+
+или
+
+var response = client.DownloadString("http://127.0.0.1/WebCollege/api/Students");
 
 Также в "OmissionsAdd.xaml.cs" на 36 строчке изменить на "var result = client.UploadString("http://СвойIP/WebCollege/api/Tests", JsonConvert.SerializeObject(_studentOmissions));" или на "var result = client.UploadString("http://127:0.0.1/WebCollege/api/Tests", JsonConvert.SerializeObject(_studentOmissions));"
 
