@@ -3,9 +3,13 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Classroom+Teacher+System)](https://github.com/lesnovartem/ClassroomTeacherSystem)
 
 BD - Скрипт для импорта базы данных в SQL Server.
+
 MobileApp - Мобильное приложение.
+
 ProjectCollege - Desktop программа.
+
 WebCollege - Api.
+
 ***
 <h2>API</h2>
 
